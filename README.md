@@ -123,17 +123,17 @@ flowchart LR
 ## 🚀 Interactive Project Deep Dives
 
 <details open>
-  <summary><b>⚖️ Autonomous Contract Lawyer — Contract QA RAG System</b></summary>
+  <summary><b>⚖️ LexiRAG (ContractAdvisor-AI) — Autonomous Legal Contract Intelligence</b></summary>
   <br/>
   
-  > *Production-focused legal intelligence assistant built to parse, query, cross-examine, and verify complex legal agreements.*
+  > *Enterprise-grade legal AI engine featuring Hybrid Retrieval (Dense Vector + BM25 with Reciprocal Rank Fusion), automated groundedness guardrails, and real-time SSE streaming.*
 
   * **Repository:** [`HabtamuFeyera/contract_QA_Rag_project`](https://github.com/HabtamuFeyera/contract_QA_Rag_project)
   * **Core Innovations:**
-    * Hierarchical parent-child document chunking preserving high-level clauses and atomic obligations.
-    * Hybrid retrieval (Vector + BM25) coupled with cross-encoder re-ranking to capture subtle legal definitions.
-    * Strict citation ground truth verification eliminating hallucinations on liability clauses.
-  * **Tech Stack:** `Python` • `LangChain` • `Vector Database` • `FastAPI` • `Jupyter Notebook`
+    * **Hybrid RAG with RRF:** Fuses dense ChromaDB semantic search with sparse BM25 lexical recall, ensuring exact statutory codes, dates, and financial figures are never missed.
+    * **Groundedness & Financial Figures Guardrail:** Automated post-generation verification auditing numerical figures and named entities against source excerpts to eliminate liability hallucinations.
+    * **Real-time SSE Streaming & CLI:** Developer CLI (`cli.py`) for headless contract ingestion and evaluation, paired with Server-Sent Events (SSE) token streaming.
+  * **Tech Stack:** `Python` • `FastAPI` • `LangChain` • `ChromaDB` • `BM25 (RRF)` • `React 18` • `Docker` • `CI/CD`
 </details>
 
 <details open>
